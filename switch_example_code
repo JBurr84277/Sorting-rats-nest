@@ -1,0 +1,21 @@
+const int switchPinA = 2;  // Arduino pin connected to one switch terminal
+const int switchPinB = 3;  // Arduino pin connected to the other switch terminal
+
+    void setup() {
+      pinMode(switchPinA, INPUT_PULLUP);
+      pinMode(switchPinB, INPUT_PULLUP);
+    }
+
+    void loop() {
+      // Check the state of switchPinA
+      if (digitalRead(switchPinA) == LOW) {
+        // Switch is in position A (on)
+        // Add your code here
+      } else if (digitalRead(switchPinB) == LOW) {
+        // Switch is in position B (on)
+        // Add your code here
+      } else {
+        // Switch is in the middle (off) position
+        // Add your code here
+      }
+    }
